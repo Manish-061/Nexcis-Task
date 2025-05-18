@@ -18,3 +18,5 @@ export default function Home() {
 
   return user ? <Dashboard /> : <Login />;
 }
+
+// Google signup complete
