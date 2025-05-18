@@ -1,21 +1,20 @@
 'use client';
 
-import { Box, Container, Typography, Button } from '@mui/material';
+import { Box, CircularProgress } from '@mui/material';
+import { useAuth } from '../context/AuthContext';
+import Login from '../components/Login';
+import Dashboard from '../components/Dashboard';
 
 export default function Home() {
-  return (
-    <Container maxWidth="sm">
-      <Box sx={{ my: 4 }}>
-        <Typography variant="h4" component="h1" gutterBottom>
-          Next.js with MUI
-        </Typography>
-        <Typography variant="body1" gutterBottom>
-          Welcome to the Next.js app with Material UI integration
-        </Typography>
-        <Button variant="contained" color="primary">
-          Get Started
-        </Button>
+  const { user, loading } = useAuth();
+
+  if (loading) {
+    return (
+      <Box sx={{ display: 'flex', justifyContent: 'center', alignItems: 'center', height: '100vh' }}>
+        <CircularProgress />
       </Box>
-    </Container>
-  );
+    );
+  }
+
+  return user ? <Dashboard /> : <Login />;
 }
