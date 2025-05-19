@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "60377081901",
+    "project_id": "next-expo-fcm",
+    "storage_bucket": "next-expo-fcm.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:60377081901:android:85bcb4a17a281d02e3f0a4",
+        "android_client_info": {
+          "package_name": "com.manish.nextjswebviewfcm"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBSogcoLNi2X9zGKKHS8-bUGDLbEqEHq5I"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
