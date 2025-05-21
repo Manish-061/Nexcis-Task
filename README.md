@@ -73,4 +73,17 @@ It provides a clean authentication flow with real-time user state management, mo
 
     Add your domain(s) to Authorized Domains under the sign-in method settings
 
+### Expo setup
+#### Intall Dependencies
+    npm install expo
+    or
+    yarn add expo
+### Install expo cli
+    npm install -g expo-cli
+    or
+    yarn global add expo-cli
+### Run the expo project
+    expo start
+    Then scan QR code with the Expo go app on you mobile or smartphone.
+
 
